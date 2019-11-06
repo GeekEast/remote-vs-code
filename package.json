@@ -2,5 +2,10 @@
   "devDependencies": {
     "doctoc": "^1.4.0",
     "husky": "^3.0.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn doctoc README.md --github --title \"## Table Of Content\" && git add -A"
+    }
   }
 }
