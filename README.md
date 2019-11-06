@@ -31,10 +31,15 @@ docker run hello-world
 - [Releases](https://github.com/cdr/code-server/releases/tag/2.1665-vsc1.39.2)
 - [QuickStart](https://github.com/cdr/code-server/blob/master/doc/quickstart.md)
 ```sh
-https://github.com/cdr/code-server/releases/download/2.1665-vsc1.39.2/code-server2.1665-vsc1.39.2-linux-x86_64.tar.gz
+# download
+wget https://github.com/cdr/code-server/releases/download/2.1665-vsc1.39.2/code-server2.1665-vsc1.39.2-linux-x86_64.tar.gz
+# unzip
 tar -xvzf code-server2.1665-vsc1.39.2-linux-x86_64.tar.gz
+# set password
+export PASSWORD="<your_password>"
+# run silently at port 8080
 cd code-server2.1665-vsc1.39.2-linux-x86_64
-./code-server
+nohup ./code-server
 ```
 
 ## References
